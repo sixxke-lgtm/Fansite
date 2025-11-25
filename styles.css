@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  color: #fff;
+}
+
+
+.background {
+  position: fixed;
+  inset: 0;
+  background: url('name2.jpg') no-repeat center center/cover;
+  z-index: -2;
+  filter: brightness(0.8) saturate(1.1);
+}
+
+/* 💫 ชั้นสีม่วงใสทับบางๆ เพิ่มความฟุ้ง 
+.background::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(100, 0, 180, 0.35),
+    rgba(200, 100, 255, 0.45)
+  );
+  z-index: -1;
+}*/
+
+.glass-box {
+  width: 500px;
+  max-width: 90%;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(18px);
+  padding: 40px 30px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+}
+
+.glass-box h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.glass-box p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #f3eaff;
+}
