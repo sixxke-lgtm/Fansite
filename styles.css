@@ -1,3 +1,4 @@
+/* การรีเซ็ตเบื้องต้น */
 * {
     margin: 0;
     padding: 0;
@@ -6,8 +7,8 @@
 
 body, html {
     height: 100%;
-    font-family: 'Tahoma', sans-serif; 
-    color: #fff; 
+    font-family: 'Arial', sans-serif; 
+    color: #E8FF77; 
 }
 
 .background-image {
@@ -26,46 +27,51 @@ body, html {
     width: 90%; 
     max-width: 500px; 
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1); 
-    backdrop-filter: blur(5px); 
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+    background-color: rgba(30, 0, 60, 0.4); 
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    border: 2px solid #64FF00; 
+    box-shadow: 0 0 20px rgba(100, 255, 0, 0.8), 
+                0 0 40px rgba(100, 255, 0, 0.3); 
     text-align: center;
 }
 
 .modal-content {
-    background-color: rgba(0, 0, 0, 0.7); 
+    background-color: rgba(0, 0, 0, 0.8); 
     padding: 20px;
-    border-radius: 6px;
+    border-radius: 8px;
 }
 
 .modal-title {
-    font-size: 1.8em;
-    margin-bottom: 10px;
-    font-weight: bold;
-    color: #ffd700; 
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    font-weight: 900;
+    color: #64FF00;
+    text-shadow: 0 0 5px #64FF00; 
 }
 
 .modal-text {
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 1.6;
     margin-bottom: 0;
-    text-align: left; 
+    text-align: justify; 
+    color: #E8FF77; 
 }
 
 .modal-note {
-    font-size: 0.8em;
-    margin-top: 15px;
-    color: #ccc;
+    font-size: 0.9em;
+    margin-top: 20px;
+    color: #9370DB; 
     text-align: right;
+    font-style: italic;
 }
 
 @media (max-width: 600px) {
     .modal-title {
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
 
     .modal-text {
-        font-size: 0.9em;
+        font-size: 1em;
     }
 }
