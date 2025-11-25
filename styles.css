@@ -1,65 +1,71 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body, html {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  color: #fff;
+    height: 100%;
+    font-family: 'Tahoma', sans-serif; 
+    color: #fff; 
 }
 
-
-.background {
-  position: fixed;
-  inset: 0;
-  background: url('RaM.jpg') no-repeat center center/cover;
-  z-index: -2;
-  filter: brightness(0.8) saturate(1.1);
+.background-image {
+    height: 100vh; 
+    width: 100%;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: relative; 
 }
 
-/* 💫 ชั้นสีม่วงใสทับบางๆ เพิ่มความฟุ้ง 
-.background::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    rgba(100, 0, 180, 0.35),
-    rgba(200, 100, 255, 0.45)
-  );
-  z-index: -1;
-}*/
-
-.glass-box {
-  width: 500px;
-  max-width: 90%;
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(18px);
-  padding: 40px 30px;
-  border-radius: 20px;
-  text-align: center;
-  margin: 0 auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+.modal-container {
+    width: 90%; 
+    max-width: 500px; 
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(5px); 
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+    text-align: center;
 }
 
-.glass-box h1 {
-  font-size: 2rem;
-  margin-bottom: 15px;
-  font-weight: 700;
-  color: #fff;
+.modal-content {
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 20px;
+    border-radius: 6px;
 }
 
-.glass-box p {
-  font-size: 1rem;
-  line-height: 1.8;
-  color: #f3eaff;
+.modal-title {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #ffd700; 
+}
 
+.modal-text {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: left; 
+}
+
+.modal-note {
+    font-size: 0.8em;
+    margin-top: 15px;
+    color: #ccc;
+    text-align: right;
+}
+
+@media (max-width: 600px) {
+    .modal-title {
+        font-size: 1.5em;
+    }
+
+    .modal-text {
+        font-size: 0.9em;
+    }
 }
